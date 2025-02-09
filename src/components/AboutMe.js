@@ -5,7 +5,7 @@ function AboutMe() {
     <div id="aboutme" className="container-fluid p-4 mt-4 vh-100">
       <h2 className="text-center mt-5 mb-4">About Me</h2>
       <div className="d-flex flex-column align-items-center m-4 p-4">
-        <img src="/images/dahyun_photo.png" className="profile" alt="Kim Dahyun" />
+      <img src={`${process.env.PUBLIC_URL}/images/dahyun_photo.png`} className="profile" alt="김다현 프로필" />
         <div className="badge-container">
           <span className="neon-badge">#즉시실행</span>
           <span className="neon-badge">#적응력_강한</span>

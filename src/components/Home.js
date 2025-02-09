@@ -4,11 +4,16 @@ import "../styles/common.css";
 
 function Home() {
   const [showFinalText, setShowFinalText] = useState(false);
+  const [showScrollText, setShowScrollText] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
       setShowFinalText(true);
-    }, 2000);
+    }, 2000); 
+
+    setTimeout(() => {
+      setShowScrollText(true);
+    }, 3500); 
   }, []);
 
   return (
@@ -26,9 +31,10 @@ function Home() {
             delaySpeed={3000}
           />
         ) : (
-          <span className="final-text"> > WELCOM KIM DAHYUN PORTFOLIO! </span>
+          <span className="final-text"> > WELCOME KIM DAHYUN PORTFOLIO! </span>
         )}
       </h1>
+      {showScrollText && <p className="scroll-text">SCROLL UP TO START</p>}
     </div>
   );
 }

@@ -75,6 +75,15 @@ body {
   animation: fadeIn 1.5s ease-in-out;
 }
 
+@media (max-width: 480px) {
+  .typing-text {
+    font-size: 2rem;
+  }
+  .final-text {
+    font-size: 2.5rem;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -85,6 +94,27 @@ body {
     transform: scale(1);
   }
 }
+
+.scroll-text {
+  display: none;
+  font-size: 1.2rem;
+  color: yellow;
+  text-shadow: 2px 2px 5px black;
+  margin-top: 15px;
+  animation: blink 1s infinite alternate;
+}
+
+@media (max-width: 480px) {
+  .scroll-text {
+    display: block; 
+  }
+}
+
+@keyframes blink {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
 
 /* AboutMe */
 .profile {
