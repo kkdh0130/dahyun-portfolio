@@ -4,8 +4,8 @@ import { SiMysql, SiFigma, SiJira, SiSlack, SiNotion, SiDiscord } from "react-ic
 
 function Stack() {
   return (
-    <div id="stack" className="container-fluid p-4 mt-4 vh-100">
-      <h2 className="text-center mt-5 mb-4">Stack</h2>
+    <div id="stack" className="container-fluid p-4 vh-100">
+      <h2 className="text-center mt-4 mb-4">Stack</h2>
       <div className="nes-container is-dark with-title mb-5">
         <p className="title">개발 스택</p>
         <div className="row justify-content-center text-center">

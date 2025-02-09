@@ -2,8 +2,8 @@ import React from "react";
 
 function Project() {
   return (
-    <div id="project" className="container-fluid p-4 mt-4 vh-100">
-      <h2 className="text-center mt-5 mb-4">Project</h2>
+    <div id="project" className="container-fluid p-4 vh-100">
+      <h2 className="text-center mt-4 mb-4">Project</h2>
       <div className="row justify-content-start mt-4 text-white p-4">
         <div className="col-md-4 col-sm-12 mb-4">
           <div className="project-card">
