@@ -4,7 +4,7 @@ import { SiMysql, SiFigma, SiJira, SiSlack, SiNotion, SiDiscord } from "react-ic
 
 function Stack() {
   return (
-    <div id="stack" className="container-fluid p-4 vh-100">
+    <div id="stack" className="container-fluid p-4 vh-90">
       <h2 className="text-center mt-4 mb-4">Stack</h2>
       <div className="nes-container is-dark with-title mb-5">
         <p className="title">개발 스택</p>
@@ -57,10 +57,6 @@ function Stack() {
           <div className="col-6 col-md-4 col-lg-3 stack-item">
             <SiNotion size={50} color="#000000" />
             <p>Notion</p>
-          </div>
-          <div className="col-6 col-md-4 col-lg-3 stack-item">
-            <SiDiscord size={50} color="#5865F2" />
-            <p>Discord</p>
           </div>
         </div>
       </div>

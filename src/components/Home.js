@@ -9,11 +9,11 @@ function Home() {
   useEffect(() => {
     setTimeout(() => {
       setShowFinalText(true);
-    }, 2000); 
+    }, 2000);
 
     setTimeout(() => {
       setShowScrollText(true);
-    }, 3500); 
+    }, 3500);
   }, []);
 
   return (
@@ -34,7 +34,7 @@ function Home() {
           <span className="final-text"> > WELCOME KIM DAHYUN PORTFOLIO! </span>
         )}
       </h1>
-      {showScrollText && <p className="scroll-text">SCROLL UP TO START</p>}
+      {showScrollText && <p className="scroll-text">SCROLL Down TO START</p>}
     </div>
   );
 }
