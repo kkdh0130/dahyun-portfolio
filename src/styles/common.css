@@ -155,7 +155,7 @@ section {
 }
 
 .highlight {
-  background-color: rgba(0, 255, 0, 0.2); /* ✅ 연한 네온 초록 */
+  background-color: rgba(0, 255, 0, 0.2);
   padding: 3px 8px;
   border-radius: 5px;
   font-weight: bold;
@@ -176,38 +176,122 @@ section {
 }
 
 /* Project */
-.project-card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  text-align: center;
-  padding: 20px;
-  transition: transform 0.2s ease-in-out;
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-}
-
-.project-card .title {
+.project-card-title {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.project-card p {
-  flex-grow: 1;
+@media (max-width: 480px) {
+  .project-card-title {
+    font-size: 1.1em;
+  }
+
+  .project-card-description {
+    font-size: 0.9rem;
+  }
 }
 
-.project-card .project-img {
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  height: 100vh;
 }
 
-/* Contact */
+.project-sidebar {
+  margin-bottom: 20px;
+}
+
+.project-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.web_preview_wrap {
+  width: 100%;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  background: #222;
+  background-color: black;
+  border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+  .web_preview_wrap {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .web_preview_wrap {
+    max-width: 300px;
+  }
+}
+
+.site_img_wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+.site_img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  transition: transform 1.5s ease-in-out;
+  transform: translateY(0);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.web_preview_wrap:hover .site_img {
+  transform: translateY(calc(-100% + 350px));
+}
+
+.pj-button {
+  padding: 8px 15px;
+  width: 50%;
+  font-size: 14px;
+  color: #00ff00;
+  background-color: black;
+  border: 1px solid #00ff00;
+  box-shadow: 0 0 5px #00ff00, inset 0 0 3px #00ff00;
+  text-transform: uppercase;
+  font-family: "DungGeunMo", sans-serif;
+  border-radius: 5px;
+}
+
+.modal-header .btn-close {
+  filter: invert(1);
+}
+
+.modal-header {
+  background-color: black;
+}
+
 .game-over-text {
   font-size: 3.5rem;
   color: red;
