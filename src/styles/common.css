@@ -200,7 +200,6 @@ section {
     font-size: 0.9rem;
   }
 }
-
 .project-container {
   display: flex;
   flex-direction: column;
@@ -208,19 +207,17 @@ section {
   justify-content: center;
   text-align: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+
+.project-content {
+  max-width: 800px;
+  padding: 30px 20px;
 }
 
 .project-sidebar {
   margin-bottom: 20px;
-}
-
-.project-content {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .project-card {
