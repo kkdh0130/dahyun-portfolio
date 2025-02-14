@@ -169,6 +169,7 @@ function Project() {
                         className="site_img img-fluid mx-auto"
                         src={project.img}
                         alt={project.title}
+                        loading="lazy"
                       />
                     </div>
                     <Button
