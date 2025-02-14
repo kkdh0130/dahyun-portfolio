@@ -13,7 +13,7 @@ function Project() {
       title: "휴일도 안심",
       description: "휴일에도 안심할 수 있도록 안전한 환경을 제공하는 웹 서비스",
       link: "https://safeevenonholidays.shop/",
-      img: "images/pj_1.png",
+      img: `${process.env.PUBLIC_URL}/images/pj_1.png`,
       features: [
         "공휴일이나 야간에 의료기관을 이용하고자 할 때,",
         "어떤 병원이 운영 중인지 쉽게 알기 어렵고, 기존 검색 서비스에서는 실시간 운영 여부를 정확히 제공하지 않는 경우가 많습니다.",
@@ -32,7 +32,7 @@ function Project() {
       title: "PokémonDex - 포켓몬 도감 웹 서비스",
       description: "포켓몬 API를 활용한 정보 조회 웹 서비스",
       link: "https://github.com/kkdh0130/my-pokemon",
-      img: "images/pj_2.png",
+      img: `${process.env.PUBLIC_URL}/images/pj_2.png`,
       features: [
         "어떤 포켓몬이 강한지 궁금할 때, 단순한 도감이 아니라 자세한 정보까지 한눈에 볼 수 있는 서비스를 만들고 싶었습니다.",
         "이 웹사이트에서는 포켓몬 이름이나 ID를 입력하면 해당 포켓몬의 타입, 스탯, 진화 경로까지 한눈에 확인할 수 있습니다.",
@@ -51,7 +51,7 @@ function Project() {
       title: "김다현 포트폴리오",
       description: "React & Bootstrap으로 제작한 개인 포트폴리오",
       link: "https://github.com/kkdh0130/dahyun-portfolio",
-      img: "images/pj_3.png",
+      img: `${process.env.PUBLIC_URL}/images/pj_3.png`,
       features: [
         "단순한 소개 페이지가 아니라, 내 개성을 담을 수 있는 포트폴리오를 만들고 싶었습니다.",
         "네온 스타일 UI를 활용해 나만의 분위기를 살리고, 타이핑 애니메이션을 추가해 동적인 느낌을 더했습니다.",
@@ -70,7 +70,7 @@ function Project() {
       title: "HRD 온라인 교육 플랫폼",
       description: "HRD 온라인 교육 플랫폼의 메인 페이지 기획 및 퍼블리싱",
       link: "https://hrdpuroom-index.vavv.net/",
-      img: "images/pj_4.png",
+      img: `${process.env.PUBLIC_URL}/images/pj_4.png`,
       features: [
         "해당 기업의 정보를 효과적으로 전달할 수 있도록 홈페이지 메인 페이지를 기획했습니다.",
         "방문자가 필요한 정보를 쉽게 찾을 수 있도록 UI/UX를 개선하고 정보 구조를 최적화했습니다.",
@@ -88,7 +88,7 @@ function Project() {
       title: "Udacity 교육 파트너 페이지 퍼블리싱",
       description: "Udacity Why 페이지 UI 구현 및 반응형 디자인 적용",
       link: "https://udacitypartner.com/Why",
-      img: "images/pj_5.png",
+      img: `${process.env.PUBLIC_URL}/images/pj_5.png`,
       features: [
         "Udacity의 파트너십을 소개하는 페이지를 보다 깔끔하고 직관적인 디자인으로 개선했습니다.",
         "모바일과 데스크톱에서 일관된 경험을 제공하기 위해 반응형 UI를 적용했습니다.",
@@ -105,7 +105,7 @@ function Project() {
       title: "이젠 아트쿡 페이지 퍼블리싱",
       description: "HTML, CSS, Bootstrap 기반 아트쿡 웹페이지",
       link: "https://github.com/kkdh0130/ezen-art-cook",
-      img: "images/pj_6.png",
+      img: `${process.env.PUBLIC_URL}/images/pj_6.png`,
       features: [
         "아트와 요리를 동시에 배울 수 있는 교육 플랫폼을 소개하는 페이지를 퍼블리싱했습니다.",
         "심플하면서도 직관적인 UI를 적용해, 방문자가 쉽게 정보를 탐색할 수 있도록 설계했습니다.",
@@ -129,8 +129,8 @@ function Project() {
   const [activeProject, setActiveProject] = useState(1);
 
   return (
-    <div className="project-container d-flex flex-column justify-content-center align-items-center text-center">
-      <div className="project-sidebar mb-4">
+    <div className="project-container text-center">
+      <div className="project-sidebar mb-2">
         <h2 className="project-title">PROJECT TIMELINE</h2>
         {projects.map((project) => (
           <button
@@ -142,7 +142,7 @@ function Project() {
           </button>
         ))}
       </div>
-      <div className="project-content p-4 d-flex flex-column justify-content-center align-items-center text-center w-100">
+      <div className="project-content d-flex flex-column justify-content-center align-items-center text-center w-100">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}

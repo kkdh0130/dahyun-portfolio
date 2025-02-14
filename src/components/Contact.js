@@ -2,6 +2,21 @@ import React, { useState } from "react";
 
 function Contact() {
   const [showContact, setShowContact] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  const email = "kkdh0130@gmail.com";
+
+  const copyToClipboard = () => {
+    navigator.clipboard
+      .writeText(email)
+      .then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      })
+      .catch((err) => {
+        console.error("복사 실패:", err);
+      });
+  };
 
   return (
     <div
@@ -33,16 +48,22 @@ function Contact() {
               </h3>
             </div>
             <div className="icon-list d-flex flex-row justify-content-center gap-4">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/kkdh0130" target="_blank" rel="noopener noreferrer">
                 <i className="nes-icon github is-large"></i>
               </a>
-              <a href="#">
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+                  copyToClipboard();
+                }}
+              >
                 <i className="nes-icon gmail is-large"></i>
               </a>
             </div>
           </div>
         </>
       )}
+      {copied && <div className="email-toast">📧 이메일 주소가 복사되었습니다!</div>}
     </div>
   );
 }

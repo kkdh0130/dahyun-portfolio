@@ -26,9 +26,9 @@ function Home() {
           <Typewriter
             words={["INSERT COIN..."]}
             loop={1}
-            typeSpeed={50}
-            deleteSpeed={0}
-            delaySpeed={3000}
+            typeSpeed={100}
+            deleteSpeed={30}
+            delaySpeed={4000}
           />
         ) : (
           <span className="final-text"> > WELCOME KIM DAHYUN PORTFOLIO! </span>

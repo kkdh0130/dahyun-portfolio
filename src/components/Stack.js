@@ -1,10 +1,10 @@
 import React from "react";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaGitAlt } from "react-icons/fa";
-import { SiMysql, SiFigma, SiJira, SiSlack, SiNotion, SiDiscord } from "react-icons/si";
+import { SiMysql, SiFigma, SiJira, SiSlack, SiNotion } from "react-icons/si";
 
 function Stack() {
   return (
-    <div id="stack" className="container-fluid p-4 vh-90">
+    <div className="stack-container p-4 vh-90">
       <h2 className="text-center mt-4 mb-4">Stack</h2>
       <div className="nes-container is-dark with-title mb-5">
         <p className="title">개발 스택</p>
