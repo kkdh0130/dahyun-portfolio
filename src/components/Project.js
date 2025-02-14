@@ -10,8 +10,8 @@ function Project() {
   const projects = [
     {
       id: 1,
-      title: "휴일도 안심",
-      description: "휴일에도 안심할 수 있도록 안전한 환경을 제공하는 웹 서비스",
+      title: "휴일도안심",
+      description: "공휴일이나 야간에도 신속하게 운영 중인 의료기관을 확인할 수 있는 웹 서비스",
       link: "https://safeevenonholidays.shop/",
       img: `${process.env.PUBLIC_URL}/images/pj_1.webp`,
       features: [
@@ -19,12 +19,11 @@ function Project() {
         "어떤 병원이 운영 중인지 쉽게 알기 어렵고, 기존 검색 서비스에서는 실시간 운영 여부를 정확히 제공하지 않는 경우가 많습니다.",
         "이러한 문제를 해결하기 위해, 사용자가 현재 위치를 기반으로 실시간으로 운영 중인 의료 기관을 검색할 수 있는 서비스를 개발하고자 했습니다.",
       ],
-      technologies: ["HTML + CSS", "JavaScript", "React", "Firebase", "Redux", "지도 API"],
+      technologies: ["HTML + CSS", "JavaScript", "React", "Redux"],
       contribution: [
-        "React 기반의 반응형 웹 UI 개발",
-        "지도 API 연동 및 병원 검색 기능 구현",
-        "Redux를 활용한 상태 관리 및 데이터 연동",
-        "서비스 기획 및 핵심 기능 설계",
+        "React 기반의 반응형 웹 UI 개발 및 사용자 경험(UX) 개선",
+        "Redux를 활용한 상태 관리 및 데이터 연동 최적화",
+        "서비스 기획 및 주요 기능 설계 참여"
       ],
     },
     {
@@ -34,9 +33,9 @@ function Project() {
       link: "https://github.com/kkdh0130/my-pokemon",
       img: `${process.env.PUBLIC_URL}/images/pj_2.webp`,
       features: [
-        "어떤 포켓몬이 강한지 궁금할 때, 단순한 도감이 아니라 자세한 정보까지 한눈에 볼 수 있는 서비스를 만들고 싶었습니다.",
-        "이 웹사이트에서는 포켓몬 이름이나 ID를 입력하면 해당 포켓몬의 타입, 스탯, 진화 경로까지 한눈에 확인할 수 있습니다.",
-        "또한, 사용자 경험을 고려해 다크모드 기능을 추가하여 가독성을 높였습니다.",
+        "React와 Pokémon API를 활용하여 Pokémon 도감을 구현한 프로젝트입니다.",
+        "포켓몬의 타입, 스킬, 속성 등의 정보를 상세하게 조회할 수 있습니다.",
+        "Intersection Observer와 React Query를 활용해 무한 스크롤 기능을 구현하여, 사용자가 스크롤할 때 자동으로 더 많은 포켓몬 데이터를 불러올 수 있습니다.",
       ],
       technologies: ["React", "JavaScript", "Bootstrap", "Pokémon API"],
       contribution: [
