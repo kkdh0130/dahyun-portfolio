@@ -299,6 +299,14 @@ section {
   border: 1px solid #00ff00;
 }
 
+.pj-button:active,
+.pj-button:focus {
+  color: #00ff00 !important;
+  background-color: black !important;
+  border-color: #00ff00 !important;
+  box-shadow: 0 0 5px #00ff00, inset 0 0 3px #00ff00 !important;
+}
+
 .modal-header .btn-close {
   filter: invert(1);
 }
