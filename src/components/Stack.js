@@ -1,6 +1,15 @@
 import React from "react";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaGitAlt } from "react-icons/fa";
-import { SiMysql, SiFigma, SiJira, SiSlack, SiNotion } from "react-icons/si";
+import {
+  SiMysql,
+  SiFigma,
+  SiJira,
+  SiSlack,
+  SiNotion,
+  SiRedux,
+  SiReactquery,
+  SiPostman,
+} from "react-icons/si";
 
 function Stack() {
   return (
@@ -24,6 +33,14 @@ function Stack() {
           <div className="col-6 col-md-4 col-lg-3 stack-item">
             <FaReact size={50} color="#61DAFB" />
             <p>React</p>
+          </div>
+          <div className="col-6 col-md-4 col-lg-3 stack-item">
+            <SiRedux size={50} color="#764ABC" />
+            <p>Redux</p>
+          </div>
+          <div className="col-6 col-md-4 col-lg-3 stack-item">
+            <SiReactquery size={50} color="#FF4154" />
+            <p>React Query</p>
           </div>
           <div className="col-6 col-md-4 col-lg-3 stack-item">
             <FaBootstrap size={50} color="#7952B3" />
@@ -57,6 +74,10 @@ function Stack() {
           <div className="col-6 col-md-4 col-lg-3 stack-item">
             <SiNotion size={50} color="#000000" />
             <p>Notion</p>
+          </div>
+          <div className="col-6 col-md-4 col-lg-3 stack-item">
+            <SiPostman size={50} color="#FF6C37" />
+            <p>Postman</p>
           </div>
         </div>
       </div>

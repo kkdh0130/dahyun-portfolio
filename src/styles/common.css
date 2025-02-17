@@ -15,6 +15,9 @@ body {
   padding: 0;
   overflow-y: auto;
   scroll-snap-type: y mandatory;
+  line-height: 1.6; 
+  letter-spacing: 0.5px; 
+  word-spacing: 2px; 
 }
 
 section {
@@ -304,6 +307,11 @@ section {
   background-color: black;
 }
 
+.project-modal-content {
+  font-size: 0.9rem;
+}
+
+/* contact-1 */
 .game-over-text {
   font-size: 3.5rem;
   color: red;
@@ -378,7 +386,7 @@ section {
   gap: 20px;
 }
 
-/* contact */
+/* contact-2 */
 .email-toast {
   position: fixed;
   bottom: 20px;

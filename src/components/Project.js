@@ -23,33 +23,45 @@ function Project() {
       contribution: [
         "React 기반의 반응형 웹 UI 개발 및 사용자 경험(UX) 개선",
         "Redux를 활용한 상태 관리 및 데이터 연동 최적화",
-        "서비스 기획 및 주요 기능 설계 참여"
+        "서비스 기획 및 주요 기능 설계 참여",
       ],
     },
     {
       id: 2,
       title: "PokémonDex - 포켓몬 도감 웹 서비스",
       description: "포켓몬 API를 활용한 정보 조회 웹 서비스",
-      link: "https://github.com/kkdh0130/my-pokemon",
+      link: "https://kkdh0130.github.io/my-pokemon/",
+      github: "https://github.com/kkdh0130/my-pokemon",
       img: `${process.env.PUBLIC_URL}/images/pj_2.webp`,
       features: [
         "React와 Pokémon API를 활용하여 Pokémon 도감을 구현한 프로젝트입니다.",
         "포켓몬의 타입, 스킬, 속성 등의 정보를 상세하게 조회할 수 있습니다.",
         "Intersection Observer와 React Query를 활용해 무한 스크롤 기능을 구현하여, 사용자가 스크롤할 때 자동으로 더 많은 포켓몬 데이터를 불러올 수 있습니다.",
       ],
-      technologies: ["React", "JavaScript", "Bootstrap", "Pokémon API"],
-      contribution: [
-        "API 연동 및 데이터 가공",
-        "UI 디자인 및 컴포넌트 개발",
-        "다크모드 및 반응형 스타일링 적용",
+      technologies: [
+        "React",
+        "JavaScript",
+        "Bootstrap",
+        "Pokémon API",
+        "REST API",
+        "Redux Toolkit",
       ],
-      github: "https://github.com/kkdh0130/my-pokemon",
+      contribution: [
+        "REST API 연동 및 데이터 가공 (Pokémon API 활용)",
+        "무한 스크롤 - Intersection Observer & React Query 최적화",
+        "검색 기능 - Pokémon 이름(한글) 필터링 적용",
+        "포켓몬 상세 정보 - API 연동을 통한 추가 데이터 로딩 구현",
+        "UI 디자인 및 컴포넌트 개발",
+        "Redux Toolkit과 localStorage를 활용한 다크모드 및 사용자 설정 저장",
+        "반응형 UI/UX 최적화 및 스타일링 개선",
+      ],
     },
     {
       id: 3,
       title: "김다현 포트폴리오",
       description: "React & Bootstrap으로 제작한 개인 포트폴리오",
-      link: "https://github.com/kkdh0130/dahyun-portfolio",
+      link: " https://kkdh0130.github.io/dahyun-portfolio/",
+      github: "https://github.com/kkdh0130/dahyun-portfolio",
       img: `${process.env.PUBLIC_URL}/images/pj_3.webp`,
       features: [
         "단순한 소개 페이지가 아니라, 내 개성을 담을 수 있는 포트폴리오를 만들고 싶었습니다.",
@@ -62,7 +74,6 @@ function Project() {
         "애니메이션 효과 적용 (GSAP 활용)",
         "반응형 스타일링 및 UI 최적화",
       ],
-      github: "https://github.com/kkdh0130/dahyun-portfolio",
     },
     {
       id: 4,
@@ -103,7 +114,8 @@ function Project() {
       id: 6,
       title: "이젠 아트쿡 페이지 퍼블리싱",
       description: "HTML, CSS, Bootstrap 기반 아트쿡 웹페이지",
-      link: "https://github.com/kkdh0130/ezen-art-cook",
+      link: "https://kkdh0130.github.io/ezen-art-cook/",
+      github: "https://github.com/kkdh0130/ezen-art-cook",
       img: `${process.env.PUBLIC_URL}/images/pj_6.webp`,
       features: [
         "아트와 요리를 동시에 배울 수 있는 교육 플랫폼을 소개하는 페이지를 퍼블리싱했습니다.",
@@ -116,7 +128,6 @@ function Project() {
         "반응형 웹 적용 및 기본 UI 스타일링",
         "웹 표준 및 접근성을 고려한 퍼블리싱",
       ],
-      github: "https://github.com/kkdh0130/ezen-art-cook",
     },
   ];
 
@@ -186,7 +197,7 @@ function Project() {
                     <Modal.Body className="text-black p-4">
                       <p>{selectedProject?.description}</p>
                       <p className="mt-3">✔️ 주요 기능</p>
-                      <ul>
+                      <ul className="project-modal-content">
                         {selectedProject?.features?.map((feature, index) => (
                           <p className="mb-1" key={index}>
                             {feature}
@@ -194,13 +205,13 @@ function Project() {
                         ))}
                       </ul>
                       <p className="mt-3">✔️ 사용 기술</p>
-                      <ul>
+                      <ul className="project-modal-content">
                         {selectedProject?.technologies?.map((tech, index) => (
                           <li key={index}>{tech}</li>
                         ))}
                       </ul>
                       <p className="mt-3">✔️ 작업 기여도</p>
-                      <ul>
+                      <ul className="project-modal-content">
                         {selectedProject?.contribution?.map((contribution, index) => (
                           <li key={index}>{contribution}</li>
                         ))}

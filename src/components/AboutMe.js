@@ -39,11 +39,28 @@ function AboutMe() {
             </p>
           </li>
           <li>
+            <span className="highlight">REST API 기반의 데이터 연동 경험</span>
+          </li>
+          <li>
+            <p>
+              React와 <span className="highlight">Axios</span>를 활용하여 API 데이터를 요청하고,
+              이를 기반으로 동적 웹 페이지를 구성하는 경험을 쌓았습니다.
+            </p>
+          </li>
+          <li>
+            <p>
+              <span className="highlight">Node.js(Express.js)와의 통신</span>을 학습하며
+              프론트엔드와 백엔드 간 데이터 흐름을 이해하려 노력하고 있습니다.
+            </p>
+          </li>
+          <li>
             <span className="highlight">사용자 경험(UX) 최우선</span>
           </li>
           <li>
-            직관적이고 효율적인 UI를 만들기 위해{" "}
-            <span className="highlight">사용자 중심 사고</span>로 접근합니다.
+            <p>
+              직관적이고 효율적인 UI를 만들기 위해{" "}
+              <span className="highlight">사용자 중심 사고</span>로 접근합니다.
+            </p>
           </li>
           <li>
             <p>
@@ -55,7 +72,7 @@ function AboutMe() {
       </div>
       <h3 className="text-center mt-5 mb-4">Career</h3>
       <div className="d-flex justify-content-center">
-        <div className="career-container pt-4" style={{ maxWidth: "664px", textAlign: "left" }}>
+        <div className="career-container pt-4" style={{ maxWidth: "955px", textAlign: "left" }}>
           <ul className="nes-list is-circle text-white w-100">
             <li>
               <p>
@@ -65,13 +82,14 @@ function AboutMe() {
             <li>
               <p>
                 <span className="highlight">[기획팀 → 개발팀]</span>
-                처음에는 <span className="highlight">기획팀</span>에서 LMS 시스템 관리와 UX 개선
-                업무를 담당했습니다.
+                처음에는 <span className="highlight">기획팀</span>에서 LMS 시스템 관리 업무를
+                맡았으며, UX 개선과 관련된 개발팀과 협업하며 개선점을 제안했습니다.
               </p>
             </li>
             <li>
               사용자 피드백을 분석하고 개선안을 제안하면서, 개발 역량의 필요성을 절감했습니다.
             </li>
+
             <li>
               <p>
                 웹 개발에 대한 관심이 커져 직접 공부를 시작했고,
@@ -107,3 +125,4 @@ function AboutMe() {
 }
 
 export default AboutMe;
+
