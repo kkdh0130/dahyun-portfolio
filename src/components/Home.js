@@ -34,7 +34,7 @@ function Home() {
           <span className="final-text"> > WELCOME KIM DAHYUN PORTFOLIO! </span>
         )}
       </h1>
-      {showScrollText && <p className="scroll-text">SCROLL Down TO START</p>}
+      {showScrollText && <p className="scroll-text">SCROLL DOWN TO START</p>}
     </div>
   );
 }
