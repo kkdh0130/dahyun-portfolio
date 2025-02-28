@@ -15,9 +15,9 @@ body {
   padding: 0;
   overflow-y: auto;
   scroll-snap-type: y mandatory;
-  line-height: 1.6; 
-  letter-spacing: 0.5px; 
-  word-spacing: 2px; 
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
 }
 
 section {
